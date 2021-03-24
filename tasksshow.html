@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ارسل التكاليف</title>
+        <!-- Fontasouame -->
+        <link rel="stylesheet" href="css/vandors/all.min.css" />
+        <!-- Bootstrap  -->
+        <link rel="stylesheet" href="css/vandors/bootstrap.min-rtl.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet" />
+        <!-- Main Style -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-ar.css" />
+    </head>
+    <body>
+        <!-- Start NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-wight py-3">
+            <div class="container">
+                <div class="navbar-brand d-flex align-items-end">
+                    <i class="fa fa-user-circle fa-2x mr-4" aria-hidden="true"></i>
+                    <span class="h5">د \ شريف</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> المحاضرات </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html">ارسال محاضرة </a>
+                                <a class="dropdown-item" href="sendlu.html">عرض المحاضرات المرسله</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> الابحاث </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="sendsearch.html">ارسال بحث جديد</a>
+                                <a class="dropdown-item" href="showsearch.html">عرض الابحاث المرسله</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> التكاليف </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="tasks.html">ارسال تكليف جديد</a>
+                                <a class="dropdown-item" href="tasksshow.html">عرض التكاليف المرسله</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> الامتحانات </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="sendquiz.html">ارسال امتحان جديد</a>
+                                <a class="dropdown-item" href="showqize.html">عرض الامتحانات المرسله</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <section id="taskshow">
+            <div class="container">
+                <h3 class="text-center">عرض التكاليف المرسلة</h3>
+                <div class="d-md-flex mb-3">
+                    <select class="w-100 border mt-3 px-2 custom-select">
+                        <optgroup label="اختار الشعبة ">
+                            <option value="" hidden>الشعبة</option>
+                            <option value="informationSystems">نظم ومعلومات ادراية</option>
+                            <option value="accounting">محاسبة</option>
+                            <option value="businessManagement">ادارة اعمال</option>
+                            <option value="languages">لغات</option>
+                            <option value="engineering">هندسة</option>
+                        </optgroup>
+                    </select>
+
+                    <select class="w-100 border mt-3 px-2 mx-2 custom-select">
+                        <optgroup label="اختار الفرقة ">
+                            <option value="" hidden>الفرقة الدراسية</option>
+                            <option value="first">الاولي</option>
+                            <option value="second">الثانية</option>
+                            <option value="third">الثالثة</option>
+                            <option value="fourth">الرابعة</option>
+                        </optgroup>
+                    </select>
+
+                    <select class="w-100 border mt-3 px-2 custom-select">
+                        <optgroup label="اختار الماده ">
+                            <option value="" hidden>اسم المادة</option>
+                            <option value="first">الاولي</option>
+                            <option value="second">الثانية</option>
+                            <option value="third">الثالثة</option>
+                            <option value="fourth">الرابعة</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <!-- ====================
+                        Main Table -->
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">أسم الطالب</th>
+                                <th scope="col">اسم التكليف</th>
+                                <th scope="col" colspan="3">تحميل</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <th scope="row">Ahmed Mohammed</th>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <th scope="row">Ahmed Mohammed</th>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <th scope="row">Ahmed Mohammed</th>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <th scope="row">Ahmed Mohammed</th>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <th scope="row">Ahmed Mohammed</th>
+                                <td>20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!-- copy Right -->
+        <div class="copy text-center border-top pt-3"><p class="lead">Copyright &copy; 2021</p></div>
+        <!-- JQuery Laibilaries -->
+        <script src="js/vandors/jquery-3.0.min.js"></script>
+        <script src="js/vandors/bootstrap.min.js"></script>
+        <script src="js/vandors/fancyTable.min.js"></script>
+        <script src="js/search-ar.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

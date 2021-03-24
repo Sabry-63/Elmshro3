@@ -1,0 +1,9 @@
+body {
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+}
+
+.form-group i {
+    right: auto;
+    left: 0px;
+}

@@ -1,0 +1,152 @@
+/* 
+    01- General Style
+*/
+:root {
+    --mainColor: #5161ce;
+    --white: #fff;
+}
+body {
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+textarea {
+    resize: none;
+}
+
+input[type="file"] {
+    overflow: hidden;
+}
+
+.btnStyle {
+    background-color: var(--mainColor);
+    color: var(--white);
+}
+
+.btnStyle:hover {
+    color: var(--mainColor);
+    background-color: var(--white);
+    border-color: var(--mainColor) !important;
+}
+
+section {
+    padding: 50px 0;
+}
+.off {
+    display: none;
+}
+
+/* 
+    02- Header Style
+*/
+nav {
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 5px 0 #ddd;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item.active > a {
+    color: var(--mainColor) !important;
+    border-bottom: 2px solid var(--mainColor);
+}
+
+.dropdown-menu {
+    padding-top: 0;
+}
+
+.dropdown-toggle::after {
+    vertical-align: 0.075em;
+    border-top: 0.4em solid;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+}
+/* 
+    03- Research
+*/
+.btns {
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    margin: auto;
+    padding: 10px 15px;
+    width: 50%;
+}
+.btns a {
+    padding: 10px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+    transition: color 0.4s, background-color 0.4s;
+    text-decoration: none;
+    top: 4px;
+    background-color: #ccc;
+    border: 1px solid transparent;
+    color: #999;
+}
+
+.btns .active {
+    border: 1px solid var(--mainColor);
+    border-bottom: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    color: var(--white);
+}
+
+/* 
+    04- Table
+*/
+.server {
+    position: relative;
+}
+.fancySearchRow {
+    background-color: transparent !important;
+}
+
+.pag {
+    width: 100%;
+    border: none !important;
+}
+.table i {
+    cursor: pointer;
+    color: var(--mainColor);
+    display: block;
+}
+/* Start Questions Area */
+.questions {
+    height: 387px;
+    overflow-y: scroll;
+}
+.question {
+    position: relative;
+}
+
+.answer_area {
+    margin: 20px;
+    position: relative;
+    border-bottom: 2px solid #ddd;
+}
+.answer_area::marker {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.box_answer {
+    margin: 10px;
+    display: inline-block;
+}
+.removeQusetion {
+    padding: 15px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+}
